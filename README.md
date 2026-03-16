@@ -62,7 +62,7 @@ image-metadata-extractor
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/seu-usuario/image-metadata-extractor.git
+git clone https://github.com/resendesricardo2/image-metadata-extractor.git
 ```
 
 ### 2. Enter the project folder
