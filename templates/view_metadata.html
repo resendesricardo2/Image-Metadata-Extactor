@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/view_metadata.css">
+    <title>View Metadates</title>
+</head>
+<body>
+    <div class="metadados-container">
+    {% if metadados and metadados|length > 0 %}
+    <h2>Image Metadates</h2>
+    <ol>
+        {% for item in metadados %}
+            <li><strong>{{ item.Tag }}:</strong> {{ item.Value }}</li>
+        {% endfor %}
+    </ol>
+    {% else %}
+    <p>This image no content metadates EXIF.</p>
+    {% endif %}
+    </div>
+</body>
+</html>

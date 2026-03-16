@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/attach image.css">
+    <title>Upload Image</title>
+</head>
+<body>
+  <form action="/results" method="post" enctype="multipart/form-data">
+  <div class="upload-card">
+  <input type="file" id="fileUpload" name="imagem" onchange="this.form.submit()" />
+  <label for="fileUpload">
+    <span class="icon">⬆️</span>
+    <p>Upload your <span>image</span></p>
+    <small>PNG or JPG</small>
+  </label>
+</div> 
+</form>
+</body>
+</html>

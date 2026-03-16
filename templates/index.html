@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Image Metadata Extractor</title>
+</head>
+<body>
+  <header id="hero">
+    <nav>
+      <ul>
+        <li><a href="#how_it_works">How it Works</a></li>
+        <li><a href="#features">Insights</a></li>
+        <li><a href="/upload_image">Launch Tool</a></li>
+      </ul>
+    </nav>
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Image Metadata Extractor</h1>
+        <p>Upload an image instantly extract EXIF metadata such as camera model, location, date and technical details.
+        </p>
+        <div class="hero-buttons">
+          <a href="/upload_image" class="button-tool">Try the tool</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="scanner-container">
+          <div class="photo-frame">
+            <div class="scan-line"></div>
+              <img src="/static/imgs/first_image.png" alt="imagem" class="image-upload">
+          </div>
+          <div class="data-panel p-camera">
+            <span class="icon">📷</span>
+            <div class="text"><span>CAMERA:</span><br>Canon EOS-1D X</div>
+          </div>
+          <div class="data-panel p-iso">
+            <span class="icon">🎞️</span>
+            <div class="text"><span>ISO:</span><br>1600</div>
+          </div>
+          <div class="data-panel p-gps">
+            <span class="icon">📍</span>
+            <div class="text"><span>GPS:</span><br>38.74° N, 9.15° W</div>
+          </div>
+          <div class="data-panel p-aperture">
+            <div class="text"><span>APERTURE:</span><br>f/4.0</div>
+          </div>
+          <div class="perspective-grid"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="how_it_works" class="how-it-works">
+    <h2>How it Works</h2>
+    <div class="content">
+      <div class="upload-box">
+        <img src="/static/imgs/image_upload.png" alt="Upload Image">
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="circle">1</span>
+          <p>Upload your photo (PNG or JPG)</p>
+        </div>
+        <div class="step">
+          <span class="circle">2</span>
+          <p>Analyze the EXIF data</p>
+        </div>
+        <div class="step">
+          <span class="circle">3</span>
+          <p>View the extracted metadata</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features-list">
+    <h2>What you will discover</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <span class="icon">📍</span>
+        <h3>Location</h3>
+        <p>Coordinates exactly where the photo happened.</p>
+      </div>
+      <div class="feature-item">
+        <span class="icon">📷</span>
+        <h3>Hardware</h3>
+        <p>Brand, lens specification camera model.</p>
+      </div>
+      <div class="feature-item">
+        <span class="icon">📅</span>
+        <h3>Historical</h3>
+        <p>Original photo date.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p class="footer-rights">&copy; 2026 Image Metadata Extractor. All rights reserved.</p>
+  </footer>
+
+  <script src="/static/script.js"></script>
